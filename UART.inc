@@ -16,6 +16,7 @@ LDI R16,0XD8;
 OUT UCSRB,R16;//USART Control and Status Register B :  Enabel RX & TX and the UART Interrupt
 LDI R16,0X86;
 OUT UCSRC,R16;// USART Control and Status Register C : Asynchronous Uart , no pariti ,one stop bit and 8-bit char size 
+
 LDI R16 ,(1<<7) 
 OUT SREG,R16 //Global Interrupt Enable 
 RET
