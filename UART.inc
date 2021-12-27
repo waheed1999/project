@@ -29,6 +29,8 @@ RET
 
 UART_REC :
 SBIC UCSRA,7// IF USART Receive Complete flag is cleared dont read the UDR Register
+  
+  
 IN R20,UDR // Read the received data from the UDR Register
 RET
 
